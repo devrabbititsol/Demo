@@ -16,7 +16,7 @@ import com.utilities.Utilities;
 import org.json.JSONObject;
 
 @SuppressWarnings("unused")
-public class TC1 extends BaseClass {
+public class TC3 extends BaseClass {
 	ExtentReports reports;
 	ExtentTest test;
 	ITestResult result;
@@ -24,13 +24,13 @@ public class TC1 extends BaseClass {
 	private ConfigFilesUtility configFileObj;
 	public boolean isElementDispalyed = false;	public static final int datasetsLength = 1;
 
-	public TC1() throws Exception {
+	public TC3() throws Exception {
 		PropertyConfigurator.configure("log4j.properties");
-		logger = Logger.getLogger(TC1.class);
+		logger = Logger.getLogger(TC3.class);
 		configFileObj = new ConfigFilesUtility();
-		configFileObj.loadPropertyFile("tc1.properties");
+		configFileObj.loadPropertyFile("tc3.properties");
 		reports = ExtentConfigurations.getExtentInstance(reportsPath, projectPath, SC1.projectName);
-		test = reports.startTest("TC1");
+		test = reports.startTest("TC3");
 	}
 	
 	public void setUP() throws Exception {
